@@ -5,7 +5,7 @@
 First you need to clone this repository.
 
 ```bash
-
+git clone 
 ```
 
 If you add new content you need to push the changes to this github.
