@@ -1,13 +1,5 @@
 # RoX TP5
 
-## Contribute
-
-First you need to clone this repository.
-
-```bash
-git clone 
-```
-
 If you add new content you need to push the changes to this github.
 
 * `mkdocs new [dir-name]` - Create a new project.
