@@ -1,0 +1,121 @@
+# SPDX-FileCopyrightText: 2024 Johannes Unruh <benedikt.franke@dlr.de>
+# SPDX-FileCopyrightText: 2024 Moritz Eckert <moritz.eckert@dlr.de>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+site_name: RoX TP5 Documentation
+
+theme:
+  name: material
+  custom_dir: overrides  
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - navigation.footer
+    - navigation.tabs
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: red
+      accent: deep red
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: purple
+      accent: deep purple
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.saneheaders
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tilde
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: rox
+      link: https://www.dlr.de/en
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - javascripts/katex.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - styles/style.css
+
+# copyright: |
+#   &copy; 2024
+#   <a href="https://www.dlr.de/en/ki/about-us/departments/safety-critical-data-infrastructure" target="_blank" rel="noopener">
+#     DLR KI SCD
+#   </a>
+
+nav:
+  - Home:
+    - index.md
+  # - File Transfer:
+  #   - file-transfer/index.md
+  #   - Manual:
+  #     - file-transfer/manual/index.md
+  #     - file-transfer/manual/create_asset.md
+  #     - file-transfer/manual/create_policy_definition.md
+  #     - file-transfer/manual/create_contract_definition.md
+  #     - file-transfer/manual/fetch_catalog.md
+  #     - file-transfer/manual/initiate_negotiation.md
+  #     - file-transfer/manual/initiate_transfer.md
+  #   - Postman:
+  #     - file-transfer/postman/index.md
+  #     - file-transfer/postman/alice.md
+  #     - file-transfer/postman/bob.md
+  #   - Python:
+  #     - file-transfer/python/index.md
+  # - Miscellaneous:
+  #   - miscellaneous/index.md
+  #   - miscellaneous/filtered_catalog.md
+  #   - miscellaneous/failed_negotiations_and_transfers.md
+  # - Vision-X Workshop:
+  #   - workshop/index.md
+  #   - Tutorial: 
+  #     - workshop/tutorial/postman.md
+  #     - workshop/tutorial/minio.md
+  #     - workshop/tutorial/alice.md
+  #     - workshop/tutorial/bob.md
+  #     - workshop/tutorial/advanced.md
