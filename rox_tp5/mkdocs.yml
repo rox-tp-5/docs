@@ -67,6 +67,14 @@ markdown_extensions:
 
 plugins:
   - search
+  - glossary:
+      file: "glossary.md" # Optional --> Default : glossary.md
+      exclude: # Optional --> Default : None
+        - 'excluded term A'
+        - 'excluded term B'
+        - '...'
+      unknown_warning: true # Optional --> Default : false
+      hide_variants: true # Optional --> Default : false
 
 extra:
   social:
@@ -91,6 +99,7 @@ extra_css:
 nav:
   - Home:
     - index.md
+    - glossary.md
   # - File Transfer:
   #   - file-transfer/index.md
   #   - Manual:
