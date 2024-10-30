@@ -1,8 +1,14 @@
-# Welcome to MkDocs
+# RoX TP5
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Contribute
 
-## Commands
+First you need to clone this repository.
+
+```bash
+
+```
+
+If you add new content you need to push the changes to this github.
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
